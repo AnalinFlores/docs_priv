@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=<, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Documentation Private</title>
+  <!-- main -->
+  <link rel="stylesheet" href="../css/bootstrap.css">
+  <link rel="stylesheet" href="../css/main.css">
+  <!-- font awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" integrity="sha384-3AB7yXWz4OeoZcPbieVW64vVXEwADiYyAEhwilzWsLw+9FgqpyjjStpPnpBO8o8S" crossorigin="anonymous">
+</head>
+
+<body>
+  <div class="container-fluid"><!--place this in all the pages-->
+    <div class="nav-communications"><!--Content for navigation depending of the group to which it belongs-->
+      <nav class="navbar"><!-- Place this nav in all the pages-->
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="../index.html"><i class="fas fa-users"></i><strong>User Guide</strong></a>
+          </div>
+          <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav navbar-right">
+              <li class="dropdown">
+                <a href="#" class="email-security dropdown-toggle" data-toggle="dropdown"><i class="mg-r-icons fas fa-envelope"></i> Email Security</a>
+                <ul class="dropdown-menu" role="menu">
+                  <li class="text-center"><a href="../email/mailvelope.html">Mailvelope</a></li>
+                  <li class="text-center"><a href="../email/thunderbird.html">Thunderbird</a></li>
+                </ul>
+              </li>
+              <li class="dropdown">
+                <a href="#" class="communications dropdown-toggle" data-toggle="dropdown"><i class="mg-r-icons fas fa-phone-square"></i>Communications Tools</a>
+                <ul class="dropdown-menu" role="menu">
+                  <li class="text-center"><a href="../communications/jitsi.html">Jitsi</a></li>
+                  <li class="text-center"><a href="../communications/signal-step1.html">Signal</a></li>
+                </ul>
+              </li>
+              <li class="dropdown">
+                <a href="#" class="collaborative dropdown-toggle" data-toggle="dropdown"><i class="mg-r-icons fas fa-folder-open"></i>Collaborative Tools</a>
+                <ul class="dropdown-menu" role="menu">
+                  <li class="text-center"><a href="../collaborative/nextcloud.html">Nextcloud</a></li>
+                  <li class="text-center"><a href="../collaborative/sandstorm.html">Sandstorm</a></li>
+                </ul>
+              </li>
+              <li class="dropdown">
+                <a href="#" class="security-tools dropdown-toggle" data-toggle="dropdown"><i class="mg-r-icons fas fa-user-secret"></i>Security Tools</a>
+                <ul class="dropdown-menu" role="menu">
+                  <li class="text-center"><a href="../security-tools/torguard.html">Torguard</a></li>
+                  <li class="text-center"><a href="../security-tools/keepass.html">Keepass</a></li>
+                  <li class="text-center"><a href="../security-tools/veracrypt.html">Veracrypt</a></li>
+                </ul>
+              </li>
+
+            </ul>
+          </div>
+      </nav>
+    </div><!--End nav Communications-->
+    <div class="row"><!--Start title for the guide-->
+      <div class="col-md-4 col-md-offset-4 communications">
+          <h2 class="title">Signal</h2>
+      </div>
+    </div><!--End row | content for title guide-->
+    <div class="row">
+      <div class="col-md-12">
+        <div class="box-content">
+          <h4>What is signal?</h4>
+          <img class="img-responsive"src="../images/signal/signal.png" alt="">
+          <p>Signal is an encrypted communications application for Android and iOS. It uses the Internet to send one-to-one and group messages, which can include files, voice notes, images and videos, and make one-to-one voice and video calls.
+          Signal uses your mobile number to identify you to your contacts. Anything you send or receive is encrypted, which makes it very hard for anyone who intercepts the data to work out what‘s being said unless they are the specified recipient.</p>
+          <p>Signal uses your mobile number to identify you to your contacts. Anything you send or receive is encrypted, which makes it very hard for anyone who intercepts the data to work out what‘s being said unless they are the specified recipient.</p>
+          <h4>Step 1: Download and Install Signal</h4>
+          <p>You can download Signal from the <b>[App Store]</b> , or from the <b>[Google Play Store]</b>. It only works with other Signal users, so get your friends to use it too.</p>
+          <p>After Signal has finished installing, tap <b>[Open]</b> to launch the app.</p>
+          <h4>Step 2: Register and Verify your Phone Number</h4>
+          <p>Once you've opened the app, Signal may request access to your contact list and media files.</p>
+          <img src="../images/signal/permission_contacts_files.png" alt="" class="img-responsive">
+          <p>You can tap <b>[continue]</b> and Signal will lead you through granting these permissions, one by one. If you deny the permissions, Signal may ask for them later.</p>
+          <p>You will now see the following screen. Enter your mobile phone number and tap <b>[Register]</b></p>
+          <img src="../images/signal/enter_phone_number_0.png" alt="" class="img-responsive">
+          <p>At this time, you'll be prompted to allow Signal to view SMS messages. This allows Signal to verify your phone number more easily. You can deny this permission by tapping <b>[Continue]</b> and then <b>[Deny]</b>, or allow it by tapping  <b>[Continue]</b> and then <b>[Allow]</b>. If you deny this permission, you can complete the setup by manually entering a six-digit code that will be sent to you via an SMS text message.</p>
+          <img src="../images/signal/permission_sms.png" alt="" class="img-responsive">
+          <p>Once you enter or allow Signal to read your SMS code, your registration will be complete.</p>
+          <img src="../images/signal/enter_code.png" alt="" class="img-responsive">
+          <img src="../images/signal/enter_code_check.png" alt="" class="img-responsive">
+          <h4>Step 3: Choose a Profile Name and Avatar</h4>
+          <p>The avatar and profile name you choose will be shown to any contacts you have saved in your address book, when you initiate new conversations, and when you explicitly allow contacts or groups to see this information. Enter any relevant information in this step and tap <b>[Finish]</b> , or skip this step by tapping <b>[Set later]</b> at the bottom.</p>
+          <img src="../images/signal/profile_setup_0.png" alt="" class="img-responsive">
+          <h4>Step 4: Set Signal as your default SMS app (optional but recommended)</h4>
+          <p>After this process is complete, you'll see the following screen.</p>
+          <img src="../images/signal/conversations_screen.png" alt="" class="img-responsive">
+          <p>By tapping <b>[Use as default SMS app]</b> ," you can have the Signal app handle both Signal as well as SMS messages. This is useful if you want to keep all your messages in one place.</p>
+          <p><b>Be aware that if you decide to use Signal as your default SMS app, messages sent to contacts that do not have Signal installed (even if you send them from within the Signal app) will not be encrypted.</b></p>
+          <h4>Using Signal</h4>
+          <p>In order to use Signal, the person that you are contacting must have Signal installed. If you try to send a message to someone using Signal and they do not have the Signal app installed, it will send a standard, non-encrypted text message. If you try to call the person, it will place a standard phone call.</p>
+          <img src="../images/signal/enter_phone_number_0.png" alt="" class="img-responsive">
+        </div>
+        <div class="content-buttons">
+          <a href="#" class="communications-button pull-left">Home</a>
+          <a href="#" class="communications-button pull-right">Desktop</a>
+        </div>
+      </div><!--End col-md-12-->
+    </div><!--End row-->
+  </div><!--End container fluid-->
+
+  <!--Place this footer in all the pages-->
+  <script src="../js/jquery.min.js"></script>
+  <script src="../js/bootstrap.min.js"></script>
+  <script src="../js/custom.js"></script>
+</body>
+</html>
