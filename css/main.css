@@ -26,6 +26,9 @@ body{
   border: 1.5px solid #e0e0e0;
   margin-bottom: 3em;
 }
+.white-opacity{
+  background: rgba(255, 255, 255, 0.32);
+}
 .navbar-nav > .open > .email-security,  .navbar-nav > .open > .email-security:hover, .navbar-default .navbar-nav > .open > .email-security:focus {
   color: #fff !important;;
   font-weight: bold;
@@ -120,10 +123,8 @@ body{
   overflow: hidden;
 }
 /********** Responsive ***********/
-@media screen and (min-width: 768px) {
 
-}
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 977px) {
   .navbar-default {
     background-color: #fff !important;
     border-color: #fff !important;
@@ -155,9 +156,12 @@ body{
     border-top: 2px solid #5ee7df;
   }
 
-   .communications .title{
+  .communications .title{
     margin-left: 0 !important;
     margin-right: 0 !important;
+  }
+  .info-communications{
+    margin: 2em 0 !important;
   }
   .nav-security-tools .navbar-collapse{
     border-top: 2px solid #fed6e3;
@@ -219,7 +223,7 @@ body{
   height: 4em;
   display: inline-block;
 }
-/************************ Nav Communications *************************/
+/************************ Communications *************************/
 .nav-communications{
   background: linear-gradient(to right, #00c9ff , #f9f047) !important;
   padding: 1.5em 2em 1.5em 2em;
@@ -275,6 +279,28 @@ body{
   background: #fff;
   border:1px solid #5ee7df;
   color:#00c9ff;
+}
+.info-communications{
+  text-align: center;
+  background: ;
+  background: linear-gradient(to right, #00c9ff , #f9f047);
+  margin: 1em 20em;
+  padding: 1em;
+}
+.info-communications h3{
+  background:#fff;
+  padding: .5em 0;
+  margin-top: 0 !important;
+
+}
+.comms-white-box{
+  background:#fff;
+  padding: 3em 2em 2em 2em;
+}
+.comms-icons{
+  font-size: 2em;
+  color: #333333;
+  margin-bottom: 1em !important;
 }
 /************************ Nav Security Tools *************************/
 .nav-security-tools {
