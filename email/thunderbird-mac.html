@@ -68,11 +68,144 @@
     <div class="row"><!--Start content for the guide-->
       <div class="col-md-12">
         <div class="box-content">
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam quis assumenda quas aliquam autem cupiditate, doloremque a repellat, officiis dolor modi sint consectetur! Eveniet ipsa pariatur et delectus, voluptatum provident.</p>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam quis assumenda quas aliquam autem cupiditate, doloremque a repellat, officiis dolor modi sint consectetur! Eveniet ipsa pariatur et delectus, voluptatum provident.</p>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam quis assumenda quas aliquam autem cupiditate, doloremque a repellat, officiis dolor modi sint consectetur! Eveniet ipsa pariatur et delectus, voluptatum provident.</p>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam quis assumenda quas aliquam autem cupiditate, doloremque a repellat, officiis dolor modi sint consectetur! Eveniet ipsa pariatur et delectus, voluptatum provident.</p>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam quis assumenda quas aliquam autem cupiditate, doloremque a repellat, officiis dolor modi sint consectetur! Eveniet ipsa pariatur et delectus, voluptatum provident.</p>
+          <h4>Installation:</h4>
+          <p>We need</p>
+          <ul>
+            <li>PGPTools</li>
+            <li>Thunderbird </li>
+          </ul>
+          <h4>PGPTools</h4>
+          <p>First, we need to download and install PGPTools for mac, use this link to download <a href="https://cloud.safe2choose.org/index.php/s/J7pGfQiEFmGE67z" target="_blank">https://cloud.safe2choose.org/index.php/s/J7pGfQiEFmGE67z</a></p>
+          <p>Open the dowloaded file and click on the <b>Install</b> icon</p>
+          <img class="wd-20 mg-bott-3 text-center img-responsive" src="../images/email/thunderbird/mac/pgptools.png" alt="">
+          <p>Follow the steps installation</p>
+          <img class="wd-30 mg-bott-3 text-center img-responsive" src="../images/email/thunderbird/mac/pgp_steps.png" alt="">
+          <div class="row box-green-to-pink mg-bott-2">
+            <div class="col-md-12 text-center "><i class="fas fa-info-circle info-icon-Email ft-size-3 text-blue " ></i></div>
+            <div class="col-md-12 pad-1">
+              <ul class="text-left">
+                <li><b>Your private (secret) key</b>  is extremely sensitive. Anyone who managed to obtain a copy of this key would be able to read encrypted content that was meant only for you. They could also sign messages so they appeared to have come from you. Your private key is, itself, encrypted to a passphrase that you will choose when generating your key pair. You should choose a strong passphrase and take care not to let anyone gain access to your private key. You will use your private key to decrypt messages sent to you by those who have a copy of your public key.</li>
+                <li><b>Your public key </b>  is meant to be shared with others and can not be used to read an encrypted message or fake a signed one. Once you have a correspondent’s public key, you can begin sending her(him) encrypted messages. Only she (he) will be able to decrypt and read these messages because only she(he) has access to the private key that matches the public key you are using to encrypt them. Similarly, in order for someone to send you encrypted email, they must obtain a copy of your public key. It is important to verify that the public key you are using to encrypt email actually does belong to the person with whom you are trying to communicate. If you or your correspondent are tricked into encrypting email with the wrong public key, your conversation will not be secure.</li>
+              </ul>
+            </div>
+          </div>
+          <h4>Create a NEW key pair (Secret key)</h4>
+          <p>Then a window like this is going to display. if it's not, open "Spotlight" and search for <b>PGP Keychain</b>. Here is where we are going to create our public and private keys. <b>(Use the email that was given to you)</b></p>
+          <p>It’s very important to think in a secure passphare. We are going to need it later.</p>
+          <img class="wd-50 mg-bott-3 text-center img-responsive" src="../images/email/thunderbird/mac/generate-key-pair.png" alt="">
+          <h4>Exporting your Secret Key</h4>
+          <p>Select your email account, then click on <b>[Export]</b></p>
+          <img class="wd-40 mg-bott-3 text-center img-responsive" src="../images/email/thunderbird/mac/export-secret-k-1.png" alt="">
+          <p>A windows will open</p>
+          <ol>
+            <li>Assign a name and the place where your secret key will be stored. All the keys are saved with the <b>.asc</b> extension, so be careful with this.</li>
+            <li>Check in the box <b>[Include secret key in exported file]</b></li>
+            <li>Click on <b>[Save]</b>. You should therefore always create a <b>backup copy</b> of your key pairs, you can use <b>Nextcloud</b> or <b>Google Drive</b>.</li>
+          </ol>
+          <img class="wd-40 mg-bott-3 text-center img-responsive" src="../images/email/thunderbird/mac/export-secret-k-2.png" alt="">
+          <h4>Exporting a Public Key</h4>
+          <p>After we create our pair of keys, we are going to get our <b>public key</b> file. It’s very importat to save it in a secure location.</p>
+          <p>In the <b>PGP Keychain</b> interface we need:</p>
+          <ol>
+            <li>Clic on the key that we created</li>
+            <li>after that clic on <b>[Export]</b>.</li>
+            <li>Click on <b>[Save]</b></li>
+          </ol>
+          <p>We need to give it a name and specify where we want to save it.</p>
+          <img class="wd-50 mg-bott-3 text-center img-responsive" src="../images/email/thunderbird/mac/export-public_key.png" alt="">
+          <p>We'll get a file like this.</p>
+          <img class="wd-10 mg-bott-3 text-center img-responsive" src="../images/email/thunderbird/mac/key-public-exported.png" alt="">
+          <h4>Thunderbird</h4>
+          <p>After that, we need to download <b>Thunderbird</b> <a href="https://www.thunderbird.net/en-US/?lang=en-US" target="_blank">https://www.thunderbird.net/en-US/?lang=en-US</a></p>
+          <p>When the download is over, open the file and drag the the app to the Applications folder</p>
+          <img class="wd-20 mg-bott-3 text-center img-responsive" src="../images/email/thunderbird/mac/thunderbird-install-1.png" alt="">
+          <h4>Add an email account to Thunderbird</h4>
+          <p>A windows like thir will appear, Click on <b>[Email]</b></p>
+          <img class="wd-60 mg-bott-3 text-center img-responsive" src="../images/email/thunderbird/mac/add-an-email.png" alt="">
+          <p><b>[Skip this and use my existing email]</b> to open the Mail Account Setup screen.</p>
+          <img class="wd-30 mg-bott-3 text-center img-responsive" src="../images/email/thunderbird/mac/Skip-and-use-existing-email.png" alt="">
+          <p>Type the name, email address and password that correspond to the account you wish to access using Thunderbird. And clic on  <b>[Continue]</b>  Thunderbird   will check the configuration of the email service you have entered.</p>
+          <img class="wd-30 mg-bott-3 text-center img-responsive" src="../images/email/thunderbird/mac/set-up-and-checking-email.png" alt="">
+          <p>After that, we select the <b>[IMAP]</b> option as in the next image and then, clic on <b>[Done]</b></p>
+          <img class="wd-30 mg-bott-3 text-center img-responsive" src="../images/email/thunderbird/mac/imap-mac.png" alt="">
+          <div class="row box-green-to-pink mg-bott-2">
+            <div class="col-md-12 text-center "><i class="fas fa-info-circle info-icon-Email ft-size-3 text-blue " ></i></div>
+            <div class="col-md-12 pad-1">
+              <p>Keep "<b>IMAP</b> (remote folders)" selected. <b>IMAP</b> stores the master copy of your email folders (including the Inbox, Drafts, Templates, Sent and Trash folders) on the server and makes a local copy on your device. This allows you to access the same messages from multiple devices while keeping your folders in sync. (POP, on the other hand, retrieves your messages from the server and stores them on the first device to which they are downloaded. This does not mean they are actually deleted from the server, but it does make it much more difficult to access your email from multiple devices.)</p>
+              <p>Important: Make sure that both the Incoming and Outgoing information shown on the screen above display <b>SSL </b>(Secure Sockets Layer) or <b>STARTTLS</b> (Start Transport Layer Security). Either one indicates that your email provider supports basic encryption.</p>
+            </div>
+          </div>
+          <p class="mg-bott-2">Now, you’re ready to use <b>Thunderbird!</b></p>
+
+          <h4>Enigmail</h4>
+          <img class="wd-5 mg-bott-3 text-center img-responsive" src="../images/email/thunderbird/enigmail.png" alt="">
+          <p>Enigmail is a seamlessly integrated security add-on for Mozilla Thunderbird. It allows you to use OpenPGP to encrypt and digitally sign your emails and to decrypt and verify messages you receive. This guide will walk you through the steps of configuring enigmail so that you can create your new pair of keys or import your keys in case you already have them created</p>
+          <h4>Enigmail Configuration</h4>
+          <p>We need a complement for Thunderbird. For this, we need to go to the Thunderbird’s tools section and after, clic on <b>[Adds-ons]</b>.</p>
+          <img class="wd-40 mg-bott-3 text-center img-responsive" src="../images/email/thunderbird/mac/adds-on-thunderbird.png" alt="">
+          <p>A windows like this will open, then click on <b>[Extensions]</b>, Then look for <b>[Enigmail]</b> in the searcher bar</p>
+          <img class="mg-bott-3 text-center img-responsive" src="../images/email/thunderbird/mac/adds-on-window.png" alt="">
+          <p>Another windows will open showing <b>[Enigmail]</b>, so click on the button <b>[+ Add to Thunderbird]</b> then <b>[Install now]</b></p>
+          <img class="mg-bott-3 text-center img-responsive" src="../images/email/thunderbird/mac/enigmail-install.png" alt="">
+          <p>When Thunderbird is done installing the add-on, it will let you know. It’s necessary to restart Thunderbird after the Enigmail’s installation. Clic on <b>[Restart now]</b></p>
+          <p>Then if you click on <b>[Extensions]</b> will notice <b>[Enigmail]</b> has been installed</p>
+          <img class="mg-bott-3 text-center img-responsive" src="../images/email/thunderbird/mac/enigmail-installed.png" alt="">
+
+          <h4>Encryption keys with Enigmail - Using key pair created in <b>[PGP Keychain]</b></h4>
+          <p>Enigmail is available in the menu bar.</p>
+          <img class="mg-bott-3 text-center img-responsive" src="../images/email/thunderbird/mac/enigmail-wizard-1.png" alt="">
+          <p>To generate a <b>GnuPG key pair</b>, follow the steps below.</p>
+          <p>A window like this will open, Select <b>[I prefer a standard configuration (recommended for beginners)]</b> and click <b>[Continue]</b>.</p>
+          <img class="wd-40 mg-bott-3 text-center img-responsive" src="../images/email/thunderbird/mac/enigmail-wizard-new.png" alt="">
+
+          <p>After that, <b>[Enigmal]</b> is going to ask us automatically about what key we want to relate with our account. Select the key you just created before in <b>[PGP Keychain]</b>, select the email and the click on <b>[Continue]</b></p>
+          <img class="wd-40 mg-bott-3 text-center img-responsive" src="../images/email/thunderbird/mac/select-key.png" alt="">
+          <p>The configuration is over. Clic on <b>[Done]</b></p>
+          <img class="wd-40 mg-bott-3 text-center img-responsive" src="../images/email/thunderbird/mac/enigmail-key-ready.png" alt="">
+          <p>Now, we can send encrypted messages.</p>
+          <p><b>[Enigmail]</b> must be activated, if it's not, follow this steps</p>
+          <ol>
+            <li>Click on your email account, a window with general settings will appear </li>
+            <li>Click on <b>[View settings for this account]</b></li>
+          </ol>
+          <img class="wd-30 mg-bott-3 text-center img-responsive" src="../images/email/thunderbird/mac/enigmai-settings-allowed.png" alt="">
+          <p>Make sure <b>[Open PGP]</b> Enigmail is activated</p>
+          <ol>
+            <li>Select <b>[OpenPGP Security]</b></li>
+            <li><b>[Enable OpenPGP support (Enigmail) for this identity]</b> must have the box checked</li>
+            <li>Then click on <b>[Ok]</b></li>
+          </ol>
+          <img class="wd-50 mg-bott-3 text-center img-responsive" src="../images/email/thunderbird/mac/enable-open-pgp.png" alt="">
+          <h4>Send encrypted messages</h4>
+          <ol>
+            <li>Make sure this buttons are activated, because if they are not, your message is not going to be encrypted and signed.</li>
+            <li>Your contacts must have your <b>[public key]</b> and make sure they have your public key, otherwise neither you nor they will be able to read the encrypted emails</li>
+          </ol>
+          <img class="wd-50 mg-bott-3 text-center img-responsive" src="../images/email/thunderbird/mac/send-encrypted-email.png" alt="">
+          <p><b>Note:</b> When we receive an encrypted message, automatically PGPTools is going ask us for the passphrase we created to decrypt the message.</p>
+
+          <h4>How do I export my OpenPGP key from Enigmail?</h4>
+          <p>If you lose your key pair, you also lose access to your encrypted emails. You should therefore always create a <b>backup copy</b> of your key pairs.</p>
+          <p> This help article explains how to export an OpenPGP key from Enigmail for Thunderbird.</p>
+          <h5>Exporting an OpenPGP key</h5>
+          <ol>
+            <li>Click the sandwich button (at the top right in the thunderbird menu)</li>
+            <li>Click the <b>'Arrow'</b> to the right of the <b>Enigmail</b> entry</li>
+            <li>Click <b>[Key Management]</b></li>
+            <img class="wd-60 mg-bott-3 text-center img-responsive" src="../images/email/thunderbird/mac/export-key-managment.png" alt="">
+            <li>Right-click the key you would like to export</li>
+            <li>Click <b>Export Keys to File</b></li>
+            <img class="wd-40 mg-bott-3 text-center img-responsive" src="../images/email/thunderbird/mac/export-key-to-file.png" alt="">
+            <li>Choose the key you would like to export. For a complete backup, click <b>[Export Secret Keys]</b></li>
+            <img class="wd-40 mg-bott-3 text-center img-responsive" src="../images/email/thunderbird/mac/export-secret-enigmail.png" alt="">
+            <li>Here you can notice you are exporting your secret and public key at once</li>
+            <li>Confirm the save location by clicking <b>[Save]</b></li>
+            <img class="wd-40 mg-bott-3 text-center img-responsive" src="../images/email/thunderbird/mac/key-pair-exported-and-saved-enigmail.png" alt="">
+          </ol>
+          <h3>Your key has now been successfully exported!</h3>
+          <h3>Don’t forget an external backup!!!</h3>
+          <p>You should always backup your key pairs on a second medium such as a USB stick  and store it in a safe place, you could use <b>Nextcloud</b> or <b>Google Drive</b>.</p>
+
         </div>
         <div class="content-buttons">
           <a href="#" class="email-button pull-left">Previous</a>

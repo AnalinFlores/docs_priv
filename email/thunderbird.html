@@ -68,6 +68,65 @@
     <div class="row"><!--Start content for the guide-->
       <div class="col-md-12">
         <div class="box-content">
+          <img class="thunderbird-logo img-Responsive img-circle" src="../images/email/thunderbird/thunderbird-logo.png" alt="">
+          <h4>Introduction</h4>
+          <p><b>Mozilla Thunderbird</b> is free and open source software that allows you to exchange and store email for multiple accounts with multiple service providers. <b>Enigmail</b> and <b>GnuPGP</b>  improve the security and privacy of your email correspondence by adding support for OpenPGP end-to-end encryption to <b>Thunderbird</b> . They also allow you to sign your messages digitally and verify the digital signatures of others.</p>
+          <p><b>Gnu Privacy Guard (GPG)</b> is free and open source software capable of encrypting, decrypting and digitally signing messages and files. It also generates and manages the public and private keys needed to do so.</p>
+          <p><b>Enigmail</b> is a Thunderbird add-on that allows you to access the encryption and authentication features provided by GnuPG, which must be installed for Enigmail to work.</p>
+
+          <h4>Things you should know about Thunderbird before you start</h3>
+          <div class="email-info-box box-green-to-pink">
+            <i class="fas fa-info-circle info-icon-Email"></i>
+            <p>Before you start with the installation of  Thunderbird, you must have your email account and password that was previously given to you through our technical team leader.  If you do not have them, please contact us through the <b>signal application</b></p>
+          </div>
+          <p><b>Thunderbird</b> relies on a form of public-key cryptography that requires each user to generate her own pair of keys. This key pair can be used to encrypt, decrypt and sign digital content such as email messages. It includes a private key and a public key:</p>
+          <ul class="text-left">
+            <li><b>Your private key</b>  is extremely sensitive. Anyone who managed to obtain a copy of this key would be able to read encrypted content that was meant only for you. They could also sign messages so they appeared to have come from you. Your private key is, itself, encrypted to a passphrase that you will choose when generating your key pair. You should choose a strong passphrase and take care not to let anyone gain access to your private key. You will use your private key to decrypt messages sent to you by those who have a copy of your public key.</li>
+            <li><b>Your public key </b>  is meant to be shared with others and can not be used to read an encrypted message or fake a signed one. Once you have a correspondent’s public key, you can begin sending her(him) encrypted messages. Only she (he) will be able to decrypt and read these messages because only she(he) has access to the private key that matches the public key you are using to encrypt them. Similarly, in order for someone to send you encrypted email, they must obtain a copy of your public key. It is important to verify that the public key you are using to encrypt email actually does belong to the person with whom you are trying to communicate. If you or your correspondent are tricked into encrypting email with the wrong public key, your conversation will not be secure.</li>
+          </ul>
+          <hr>
+          <p>Thunderbird is available for <b>Microsoft Windows, Mac OS X and GNU/Linux.</b> Securely managing multiple email accounts is a complex task, and we strongly recommend Thunderbird for this purpose.</p>
+          <p>Before starting to install Thunderbird, you have to be aware of the following <b>add-ons</b> that will allow you to encrypt and decrypt  your emails.</p><br><br>
+          <div class="row white-content pd-top-2 mg-bott-2">
+            <div class="col-md-2">
+              <h4 class="mg-top-0"><u>Gpg4win:</u></h4>
+              <img class="wd-10" src="../images/Windows.png" alt="">
+            </div>
+            <div class="col-md-10">
+              <p>Gpg4win enables users to securely transport emails and files with the help of encryption and digital signatures. Encryption protects the contents against an unwanted party reading it. Digital signatures make sure that it was not modified and comes from a specific sender.</p>
+              <p>Gpg4win is an installer for <b>Windows</b> and contains several Free Software components: <b>GnuPG , Kleopatra, GpgOL, GpgEX.</b></p>
+            </div>
+          </div><!--end row pgp4win-->
+          <div class="row white-content pd-top-2 mg-bott-2">
+            <div class="col-md-2">
+              <h4 class="mg-top-0"><u>Enigmail:</u></h4>
+              <img class="wd-5 display-inline" src="../images/Windows.png" alt="">
+              <img class="wd-5 display-inline" src="../images/Mac-finder.png" alt="">
+            </div>
+            <div class="col-md-10">
+              <p>Enigmail is a seamlessly integrated security add-on for <b>Mozilla Thunderbird.</b> It allows you to use OpenPGP to encrypt and digitally sign your emails and to decrypt and verify messages you receive.</p>
+            </div>
+          </div><!--end row enigmail-->
+          <div class="row white-content pd-top-2 mg-bott-2">
+            <div class="col-md-2">
+              <h4 class="mg-top-0"><u>Enigmail:</u></h4>
+              <img class="wd-5" src="../images/Mac-finder.png" alt="">
+            </div>
+            <div class="col-md-10">
+              <p>GPG Suite, an application that brings encrypted email to <b>Mac OS</b></p>
+              <p>Four software components are contained in the package: <b>GPG Mail, GPG Keychain, MacGPG, GPG Services.</b></p>
+            </div>
+          </div><!--end row pgp tools-->
+          <div class="row pd-top-2 box-green-to-pink">
+            <div class="col-md-12 text-center mg-bott-2"><i class="fas fa-users ft-size-3 text-blue " ></i></div>
+            <div class="col-md-12 text-center">
+              <p>The aforementioned add-ons will be installed depending on the operating system you use. <b>Please choose the operating system to start with the installation</b></p>
+            </div>
+            <a href="#"><div class="col-md-6 text-center mg-bott-2 pd-top-2"><div class="white-content pad-1"><img class="wd-15 img-shadow" src="../images/Windows.png" alt=""></div></div></a>
+            <a href="#"><div class="col-md-6 text-center mg-bott-2 pd-top-2"><div class="white-content pad-1"><img class="wd-5 img-shadow" src="../images/Mac-finder.png" alt=""></div></div></a>
+
+          </div>
+
 
         </div>
         <div class="content-buttons">
