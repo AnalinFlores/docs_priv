@@ -80,14 +80,12 @@
           <img class="wd-20 mg-bott-3 text-center img-responsive" src="../images/email/thunderbird/mac/pgptools.png" alt="">
           <p>Follow the steps installation</p>
           <img class="wd-30 mg-bott-3 text-center img-responsive" src="../images/email/thunderbird/mac/pgp_steps.png" alt="">
-          <div class="row box-green-to-pink mg-bott-2">
-            <div class="col-md-12 text-center "><i class="fas fa-info-circle info-icon-Email ft-size-3 text-blue " ></i></div>
-            <div class="col-md-12 pad-1">
+          <div class="display-block box-green-to-pink mg-bott-2 pad-2">
+            <div class="text-center "><i class="fas fa-info-circle info-icon-Email ft-size-3 text-blue " ></i></div>
               <ul class="text-left">
                 <li><b>Your private (secret) key</b>  is extremely sensitive. Anyone who managed to obtain a copy of this key would be able to read encrypted content that was meant only for you. They could also sign messages so they appeared to have come from you. Your private key is, itself, encrypted to a passphrase that you will choose when generating your key pair. You should choose a strong passphrase and take care not to let anyone gain access to your private key. You will use your private key to decrypt messages sent to you by those who have a copy of your public key.</li>
                 <li><b>Your public key </b>  is meant to be shared with others and can not be used to read an encrypted message or fake a signed one. Once you have a correspondent’s public key, you can begin sending her(him) encrypted messages. Only she (he) will be able to decrypt and read these messages because only she(he) has access to the private key that matches the public key you are using to encrypt them. Similarly, in order for someone to send you encrypted email, they must obtain a copy of your public key. It is important to verify that the public key you are using to encrypt email actually does belong to the person with whom you are trying to communicate. If you or your correspondent are tricked into encrypting email with the wrong public key, your conversation will not be secure.</li>
               </ul>
-            </div>
           </div>
           <h4>Create a NEW key pair (Secret key)</h4>
           <p>Then a window like this is going to display. if it's not, open "Spotlight" and search for <b>PGP Keychain</b>. Here is where we are going to create our public and private keys. <b>(Use the email that was given to you)</b></p>
@@ -128,9 +126,9 @@
           <img class="wd-30 mg-bott-3 text-center img-responsive" src="../images/email/thunderbird/mac/set-up-and-checking-email.png" alt="">
           <p>After that, we select the <b>[IMAP]</b> option as in the next image and then, clic on <b>[Done]</b></p>
           <img class="wd-30 mg-bott-3 text-center img-responsive" src="../images/email/thunderbird/mac/imap-mac.png" alt="">
-          <div class="row box-green-to-pink mg-bott-2">
-            <div class="col-md-12 text-center "><i class="fas fa-info-circle info-icon-Email ft-size-3 text-blue " ></i></div>
-            <div class="col-md-12 pad-1">
+          <div class="display-block box-green-to-pink mg-bott-2 pad-2">
+            <div class="text-center "><i class="fas fa-info-circle info-icon-Email ft-size-3 text-blue " ></i></div>
+            <div class="pad-1">
               <p>Keep "<b>IMAP</b> (remote folders)" selected. <b>IMAP</b> stores the master copy of your email folders (including the Inbox, Drafts, Templates, Sent and Trash folders) on the server and makes a local copy on your device. This allows you to access the same messages from multiple devices while keeping your folders in sync. (POP, on the other hand, retrieves your messages from the server and stores them on the first device to which they are downloaded. This does not mean they are actually deleted from the server, but it does make it much more difficult to access your email from multiple devices.)</p>
               <p>Important: Make sure that both the Incoming and Outgoing information shown on the screen above display <b>SSL </b>(Secure Sockets Layer) or <b>STARTTLS</b> (Start Transport Layer Security). Either one indicates that your email provider supports basic encryption.</p>
             </div>

@@ -50,6 +50,9 @@ body{
 .display-inline{
   display: inline-block !important;
 }
+.display-block{
+  display: block !important;
+}
 .white-content{
   background: #fff;
 }
@@ -60,7 +63,10 @@ body{
   padding: 1em;
 }
 .pad-2{
-  padding: 2em;
+  padding: 2em !important;
+}
+.pad-right-3{
+  padding-right: 3em !important;
 }
 .mg-bott-2{
   margin-bottom: 2em !important;
@@ -70,6 +76,7 @@ body{
 }
 .box-green-to-pink{
   background: linear-gradient(to right, #c1eee5 , #f4e2e0);
+  overflow: hidden;
 }
 .ft-size-3{
   font-size: 3em;
@@ -79,7 +86,11 @@ body{
 }
 .container-fluid .row, .container-fluid .col-md-12{
   margin-right: 0 !important;
-  padding-right: 0 !important;
+  padding-right:0 !important;
+}
+.box-Content .box-green-to-pink{
+  margin-right: 1em !important;
+  padding-right:1em !important;
 }
 .box-content{
   background-color: #f5f5f5;
@@ -188,11 +199,11 @@ body{
 /********** Responsive ***********/
 
 @media screen and (max-width: 977px) {
-  .navbar-default {
-    background-color: #fff !important;
-    border-color: #fff !important;
-    border-radius: none;
+  .navbar-default .navbar-collapse, .navbar-default .navbar-form {
+    border-color: #e6e6e6;
+    background: white !important;
   }
+
   .navbar-default .navbar-brand {
     color: #777777 !important;
   }
