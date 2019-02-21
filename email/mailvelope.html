@@ -68,11 +68,129 @@
     <div class="row"><!--Start content for the guide-->
       <div class="col-md-12">
         <div class="box-content">
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam quis assumenda quas aliquam autem cupiditate, doloremque a repellat, officiis dolor modi sint consectetur! Eveniet ipsa pariatur et delectus, voluptatum provident.</p>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam quis assumenda quas aliquam autem cupiditate, doloremque a repellat, officiis dolor modi sint consectetur! Eveniet ipsa pariatur et delectus, voluptatum provident.</p>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam quis assumenda quas aliquam autem cupiditate, doloremque a repellat, officiis dolor modi sint consectetur! Eveniet ipsa pariatur et delectus, voluptatum provident.</p>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam quis assumenda quas aliquam autem cupiditate, doloremque a repellat, officiis dolor modi sint consectetur! Eveniet ipsa pariatur et delectus, voluptatum provident.</p>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam quis assumenda quas aliquam autem cupiditate, doloremque a repellat, officiis dolor modi sint consectetur! Eveniet ipsa pariatur et delectus, voluptatum provident.</p>
+          <h4>Introduction</h4>
+          <h5>What is mailvelope?</h5>
+          <img class="wd-10 mg-bott-3 text-center img-responsive" src="../images/email/mailvelope/mailvelope-icon.png" alt="">
+          <p>Mailvelope is a <b>browser extension</b> that allows you to encrypt, decrypt, sign and authenticate email messages and files using <b>OpenPGP</b>. It works with webmail and does not require you to download or install additional software. While Mailvelope lacks many of the features provided by <b>Thunderbird, Enigmail</b> and <b>GnuPG</b>, it is probably the easiest way for webmail users to begin taking advantage of end-to-end encryption.</p>
+          <h4>Things you should know about Mailvelope before you start</h4>
+          <div class="row box-green-to-pink mg-bott-2">
+            <div class="col-md-12 text-center "><i class="fas fa-info-circle info-icon-Email ft-size-3 text-blue " ></i></div>
+            <div class="col-md-12 pad-1">
+              <ul class="text-left">
+                <li><b>Your private (secret) key</b>  is extremely sensitive. Anyone who managed to obtain a copy of this key would be able to read encrypted content that was meant only for you. They could also sign messages so they appeared to have come from you. Your private key is, itself, encrypted to a passphrase that you will choose when generating your key pair. You should choose a strong passphrase and take care not to let anyone gain access to your private key. You will use your private key to decrypt messages sent to you by those who have a copy of your public key.</li>
+                <li><b>Your public key </b>  is meant to be shared with others and can not be used to read an encrypted message or fake a signed one. Once you have a correspondent’s public key, you can begin sending her(him) encrypted messages. Only she (he) will be able to decrypt and read these messages because only she(he) has access to the private key that matches the public key you are using to encrypt them. Similarly, in order for someone to send you encrypted email, they must obtain a copy of your public key. It is important to verify that the public key you are using to encrypt email actually does belong to the person with whom you are trying to communicate. If you or your correspondent are tricked into encrypting email with the wrong public key, your conversation will not be secure.</li>
+              </ul>
+            </div>
+          </div>
+          <p>Mailvelope also lets you attach digital signatures to your messages. If you sign a message using your private key, any recipient with a copy of your public key can verify that it was sent by you and that its content was not tampered with. Similarly, if you have a correspondent's public key, you can verify his digital signatures. Mailvelope lets you:</p>
+          <ul>
+            <li>Generate an encryption key pair</li>
+            <li>Export your public key so you can share it with others</li>
+            <li>Import other people's public keys</li>
+            <li>Compose, encrypt and sign email messages</li>
+            <li>Decrypt and authenticate messages</li>
+            <li>Encrypt, attach and decrypt files</li>
+          </ul>
+          <p>Your correspondents do not have to use Mailvelope, but they do have to use some form of OpenPGP encryption, several of which are listed below.</p>
+          <p>Since Mailvelope is a <b>browser extension</b>, it will only work with the browser on which it was installed. If you want to use Mailvelope with a different browser, you will have to install it again. This is true even if both browsers are on the same computer. You will also have to export all of your keys and import them into the new copy of Mailvelope.</p>
+          <h5>Requirements</h5>
+          <p>Mailvelope comes preconfigured for major webmail provider such as: Gmail, Yahoo! Mail, Outlook.com GMX and others that you can also configure</p>
+          <ul>
+            <li><b>Mozilla Firefox</b> on Windows, Mac or Linux</li>
+            <li><b>Chrome</b> on Windows, Mac or LInux</li>
+            <li><b>Chromium </b>on Windows, Mac or LInux</li>
+          </ul>
+
+          <h4>Install Mailvelope</h4>
+          <p>Follow the instructions here depending of the browser you have <a href="https://www.mailvelope.com/en/help#installation" target="_blank">https://www.mailvelope.com/en/help#installation</a></p>
+          <h4>1.	Generate keys </h4>
+          <ol>
+            <li>Select the mailvelope icon in our browser’s toolbar</li>
+            <li>Go to <b>[Dashboard]</b></li>
+            <img class="wd-50 mg-bott-3 text-center img-responsive" src="../images/email/mailvelope/mailvelope-icon-bar.png" alt="">
+            <li>A windows like this will appear, select <b>[Manage Keys]</b></li>
+            <img class="wd-50 mg-bott-3 text-center img-responsive" src="../images/email/mailvelope/mailvelope-manage-keys.png" alt="">
+            <li>The key management window will appear, click on <b>[Generate]</b></li>
+            <img class="wd-50 mg-bott-3 text-center img-responsive" src="../images/email/mailvelope/mailvelope-generate-key.png" alt="">
+            <li>Fill the form. Remember to write a password that can be easy to remember because you’ll type it frecuently. Press <b>[Generate]</b></li>
+            <img class="wd-50 mg-bott-3 text-center img-responsive" src="../images/email/mailvelope/mailvelope-fill-form.png" alt="">
+            <li>You’ll see a estatus bar while the creation is processing, and when it finishes will send you a message</li>
+            <img class="wd-50 mg-bott-3 text-center img-responsive" src="../images/email/mailvelope/mailvelope-key-generation.png" alt="">
+            <li>Click on the mailvelope icon, select <b>[Keyring]</b></li>
+            <li>You'll see your <b>Key Pair</b></li>
+            <img class="wd-50 mg-bott-3 text-center img-responsive" src="../images/email/mailvelope/mailvelope-keyring.png" alt="">
+          </ol>
+          <h4>Export Key Pair (Secret Key)</h4>
+          <ol>
+            <li>Click on the email you added, then the <b>Key details</b> window will appear</li>
+            <li>Click on <b>[Export]</b></li>
+            <li>Press <b>[Private]</b></li>
+            <li>Finally click on <b>[Save]</b></li>
+            <img class="wd-50 mg-bott-3 text-center img-responsive" src="../images/email/mailvelope/mailvelope-export-key-pair.png" alt="">
+          </ol>
+          <p>You should always backup your <b>key pairs</b> on a second medium such as a USB stick  and store it in a safe place, you could use <b>Nextcloud</b> or <b>Google Drive</b>.</p>
+
+          <h4>Export Public Key</h4>
+          <p>To export your public key you need to repet the steps you did for your private keys, With the only difference that you will press <b>[Public]</b> instead of private</p>
+          <img class="wd-50 mg-bott-3 text-center img-responsive" src="../images/email/mailvelope/mailvelope-export-public-key.png" alt="">
+          <h4>Import Public Keys</h4>
+          <p>Click on the <b>[Keyring]</b> option in the left sidebar bar. We’ll see the next screen and will click on <b>[Import]</b> and select one of the public key files. </p>
+          <img class="wd-50 mg-bott-3 text-center img-responsive" src="../images/email/mailvelope/mailvelope-import-public-keys.png" alt="">
+          <p>Once the <b>Key</b> is loaded press <b>[Open]</b> and you’ll receive a successful message, otherwise please contact tech@safe2choose.org for technical support.</p>
+          <img class="wd-50 mg-bott-3 text-center img-responsive" src="../images/email/mailvelope/mailvelope-import-public-key-1.png" alt="">
+
+          <h4>Configure Mailvelope to integrate with Koumbit</h4>
+          <p>Select the <b>Mailvelope icon</b> from the toolbar. click on the <b>[Dashboard]</b> option, then press <b>[Manage authorized domains]</b></p>
+          <img class="wd-50 mg-bott-3 text-center img-responsive" src="../images/email/mailvelope/mailvelope-manage-authorized-domains.png" alt="">
+          <p>A windows like this will appear with the List of Mail Providers, press <b>[+ Add new entry]</b> </p>
+          <img class="wd-50 mg-bott-3 text-center img-responsive" src="../images/email/mailvelope/mailvelope-domains.png" alt="">
+          <p>If you use <b>Safe2choose</b> or <b>findmymethod</b> accounts input this</p>
+          <ol>
+            <li><b>Site: </b> <a href="https://mailcow.safe2choose.org/rc/" target="_blank">https://mailcow.safe2choose.org/rc/</a></li>
+            <li><b>Domain pattern:</b> *.safe2choose.org</li>
+            <li>Press <b>[Ok]</b></li>
+            <img class="wd-50 mg-bott-3 text-center img-responsive" src="../images/email/mailvelope/mailvelope-s2c-domain.png" alt="">
+          </ol>
+          <p>If you use <b>howtouseabortionpill</b> or <b>sayana press</b> accounts input this</p>
+          <ol>
+            <li><b>Site: </b> <a href="https://webmail.koumbit.net/roundcube/" target="_blank">https://webmail.koumbit.net/roundcube/</a></li>
+            <li><b>Domain pattern:</b> *.koumbit.net</li>
+            <li>Press <b>[Ok]</b></li>
+            <img class="wd-50 mg-bott-3 text-center img-responsive" src="../images/email/mailvelope/mailvelope-htu-domain.png" alt="">
+          </ol>
+
+          <h4>Send Encrypted messages</h4>
+          <p>This time we'll use a <b>safe2choose account</b>, go here <a href="https://mailcow.safe2choose.org/rc/" target="_blank">https://mailcow.safe2choose.org/rc/</a>, log in with your email and password</p>
+          <img class="wd-50 mg-bott-3 text-center img-responsive" src="../images/email/mailvelope/mail-settings-1.png" alt="">
+          <p>You'll see your inbox, click on <b>[Compose]</b></p>
+          <img class="wd-50 mg-bott-3 text-center img-responsive" src="../images/email/mailvelope/mailvelope-compose-email.png" alt="">
+          <ol>
+            <li>Input a <b>recipient</b></li>
+            <li>Input the <b>Subject</b></li>
+            <li>To encrypt messages, click on the icon in the upper left of the compose message screen.</li>
+            <li>Then a window will display <b>[Compose email]</b>, add the same <b>recipient</b> you previously added before</li>
+            <li>Compose your message in the pop-up screen.</li>
+            <li>Press <b>[Encrypt]</b> when complete.</li>
+            <img class="wd-50 mg-bott-3 text-center img-responsive" src="../images/email/mailvelope/mailvelope-sending-email-encrypted.png" alt="">
+            <li>You can see your encrypted message</li>
+            <li>Press <b>[Send]</b></li>
+            <li>Finally a successfully message appears at the button of the page <b></b></li>
+            <img class="wd-50 mg-bott-3 text-center img-responsive" src="../images/email/mailvelope/mailvelope-encrypted-emai-sent.png" alt="">
+          </ol>
+          <h4>Open encrypted emails</h4>
+          <p>We'll the encrypted mail we sent to the recipient</p>
+          <ol>
+            <li>Press <b>[Sent]</b></li>
+            <li>Click on the email we previously sent</li>
+            <li>Click on the <b>email icon</b> to open the message</li>
+            <img class="wd-50 mg-bott-3 text-center img-responsive" src="../images/email/mailvelope/mailvelope-open-email.png" alt="">
+            <li>Input the password you previously created using <b>enigmail</b> to protect your keys</li>
+            <li>Click on <b>[Ok]</b></li>
+            <img class="wd-60 mg-bott-3 text-center img-responsive" src="../images/email/mailvelope/mailvelope-enter-password-key.png" alt="">
+            <li>The compose email will open</li>
+            <img class="wd-50 mg-bott-3 text-center img-responsive" src="../images/email/mailvelope/mailvelope-encrypted-email-opened.png" alt="">
+          </ol>
+          <h3>Now you're Done!!!</h3>
         </div>
         <div class="content-buttons">
           <a href="#" class="email-button pull-left">Previous</a>
