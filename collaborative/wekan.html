@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=<, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Documentation Private</title>
+  <!-- main -->
+  <link rel="stylesheet" href="../css/bootstrap.css">
+  <link rel="stylesheet" href="../css/main.css">
+  <!-- font awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" integrity="sha384-3AB7yXWz4OeoZcPbieVW64vVXEwADiYyAEhwilzWsLw+9FgqpyjjStpPnpBO8o8S" crossorigin="anonymous">
+</head>
+
+<body>
+  <div class="container-fluid"><!--place this in all the pages-->
+    <div class="nav-collaborative"><!--Content for navigation depending of the group to which it belongs-->
+      <nav class="navbar"><!-- Place this nav in all the pages-->
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="../index.html"><i class="fas fa-users"></i><strong>User Guide</strong></a>
+          </div>
+          <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav navbar-right">
+              <li class="dropdown">
+                <a href="#" class="email-security dropdown-toggle" data-toggle="dropdown"><i class="mg-r-icons fas fa-envelope"></i> Email Security</a>
+                <ul class="dropdown-menu" role="menu">
+                  <li class="text-center"><a href="../email/mailvelope.html">Mailvelope</a></li>
+                  <li class="text-center"><a href="../email/thunderbird.html">Thunderbird</a></li>
+                </ul>
+              </li>
+              <li class="dropdown">
+                <a href="#" class="communications dropdown-toggle" data-toggle="dropdown"><i class="mg-r-icons fas fa-phone-square"></i>Communications Tools</a>
+                <ul class="dropdown-menu" role="menu">
+                  <li class="text-center"><a href="../communications/jitsi.html">Jitsi</a></li>
+                  <li class="text-center"><a href="../communications/signal-step1.html">Signal</a></li>
+                </ul>
+              </li>
+              <li class="dropdown">
+                <a href="#" class="collaborative dropdown-toggle" data-toggle="dropdown"><i class="mg-r-icons fas fa-folder-open"></i>Collaborative Tools</a>
+                <ul class="dropdown-menu" role="menu">
+                  <li class="text-center"><a href="../collaborative/nextcloud.html">Nextcloud</a></li>
+                  <li class="text-center"><a href="../collaborative/sandstorm.html">Sandstorm</a></li>
+                </ul>
+              </li>
+              <li class="dropdown">
+                <a href="#" class="security-tools dropdown-toggle" data-toggle="dropdown"><i class="mg-r-icons fas fa-user-secret"></i>Security Tools</a>
+                <ul class="dropdown-menu" role="menu">
+                  <li class="text-center"><a href="../security-tools/torguard.html">Torguard</a></li>
+                  <li class="text-center"><a href="../security-tools/keepass.html">Keepass</a></li>
+                  <li class="text-center"><a href="../security-tools/veracrypt.html">Veracrypt</a></li>
+                </ul>
+              </li>
+
+            </ul>
+          </div>
+      </nav>
+    </div><!--End nav Communications-->
+    <div class="row"><!--Start title for the guide-->
+      <div class="col-md-4 col-md-offset-4 collaborative">
+          <h2 class="title">Sandstorm</h2>
+      </div>
+    </div><!--End row | content for title guide-->
+    <div class="row"><!--Start content for the guide-->
+      <div class="col-md-12">
+        <div class="box-content">
+          <img class="thunderbird-logo img-Responsive img-circle mg-bott-3" src="../images/sandstorm.png" alt="">
+          <h4>Wekand</h4>
+          <img class="wd-10 mg-bott-3 text-center img-responsive" src="../images/collaborative/sandstorm/wekan.png" alt="">
+          <p>Wekan is a online kanban board, is a workflow visualization tool that enables us to optimize our work, by helping us to see the big picture, give us a perspective over all the projects, and dive into the details of every task. </p>
+          <p>Allows us to stay organized and in communication, because everyone knows the status of tasks as cards move across lists until Done and organize the essential info for each request.</p>
+          <p>You will find <a href="https://apps.sandstorm.io/app/m86q05rdvj14yvn78ghaxynqz7u2svw6rnttptxx49g1785cdv1h">Wekand</a>  on App tab in sandstorm, you can create as many boards as you need and customize them as you want.</p>
+          <img class="wd-70 mg-bott-3 text-center img-responsive" src="../images/collaborative/sandstorm/wekan_01.png" alt="">
+          <h4>Backlog board</h4>
+          <p>Welcome to our back log</p>
+          <p><i>This is the only way you can request a task to tech team</i>, so it’s important you know how it works. </p>
+          <p><i>It’s very important you check the Backlog at least once or twice a day to be up to date on the status of the task</i>, if the team have  any doubt or requires something this will be the contact medium.</p>
+          <img class="wd-70 mg-bott-3 text-center img-responsive" src="../images/collaborative/sandstorm/wekan_02.png" alt="">
+          <p>In this board all tasks are organized by project, each one has its own column (safe2choose, How to use, FMM & Tech Team | Internal) each column has four levels here is a little intro of them (from bottom to top)</p>
+          <ul>
+            <li><b>ToDos</b>: Here is where all new task go, for each task a card needs to be created (you will see how to do this in the next step).</li>
+            <li><b>Doing:</b> When a task is being carried out it is transferred to this level.</li>
+            <li><b>Test:</b> When a task has been finished, go to this level to verify that it has been completed and check if it does not need any change, if there are changes to be done go back to the past level. When the tech test will be approved, the responsible party will be pined for final approval.</li>
+            <li><b>Done: </b>When a task is verified and completed passes to this level.</li>
+          </ul>
+          <h4>Create a new card /  adding a task</h4>
+          <img class="wd-70 mg-bott-3 text-center img-responsive" src="../images/collaborative/sandstorm/wekan_to_do.png" alt="">
+          <ol>
+            <li>
+              <p>To add a new task the first thing you have to do is go to ToDos Level of the project, at the end of the existing cards you will find “+ Add Card” click on it</p>
+              <img class="wd-70 mg-bott-3 text-center img-responsive" src="../images/collaborative/sandstorm/wekan_add.png" alt="">
+
+            </li>
+            <li>
+              <p>It will display a text box, here you should place a descriptive title of the task. Then just click on add. And your task will be add to the board. But we need a few more details.</p>
+              <img class="wd-70 mg-bott-3 text-center img-responsive" src="../images/collaborative/sandstorm/wekan_add_01.png" alt="">
+            </li>
+            <li>
+              <p>Click on the card you have already create, the next menu will be display, the most important values you have to add is:</p>
+              <img class="wd-70 mg-bott-3 text-center img-responsive" src="../images/collaborative/sandstorm/wekan_values.png" alt="">
+              <ul>
+                <li><b>Received & Due: </b> Click on “Add” and select the date. On <b>Received</b> select the day you're creating the task and on <b>Due</b> the day you expect it will be completed. <b>Start</b> and <b>End</b>  will be fill by tech team. </li>
+                <li><b>Members: </b>  Click “+” Add yourself to the card to keep you up to date on the status of the task, you will be the responsible of the task, you can add other members of the team but the final approval it’s up to you and any doubt will be addressed to you. Remember it’s very important you  check the board at least once or twice a day. Add @cecilia if you don’t know  who must attend your request</li>
+              </ul>
+            </li>
+          </ol>
+
+
+
+        </div>
+        <div class="content-buttons">
+          <a href="#" class="collaborative-button pull-left">Previous</a>
+          <a href="#" class="collaborative-button pull-right">Next</a>
+        </div>
+      </div><!--End col-md-12-->
+    </div><!--End row | content for guide-->
+  </div><!--End container fluid-->
+  <!--Place this footer in all the pages-->
+  <script src="../js/jquery.min.js"></script>
+  <script src="../js/bootstrap.min.js"></script>
+  <script src="../js/custom.js"></script>
+</body>
+</html>
